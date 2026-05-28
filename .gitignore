@@ -1,0 +1,17 @@
+# Data
+*.nii.gz
+*.nii
+*.dcm
+*.dicom
+inputs/
+outputs/
+data/
+datasets/
+
+# PyTorch Model
+*.pt
+*.pth
+
+# Privacy 
+*.env
+ngrok_token.txt

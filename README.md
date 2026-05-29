@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img src="MONAI_LISA_3.png" width="800">
+</p>
+
 # MONAI_LISA: Learning Image Synthesis & Analysis
 
 **MONAI_LISA** is a personal medical AI sandbox designed for exploring and experimenting with 3D medical image computing. Built on top of the [MONAI](https://monai.io/) framework, this project provides a playground for implementing and benchmarking state-of-the-art deep learning techniques in the medical domain.

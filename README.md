@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="MONAI_LISA_3.png" width="800">
+  <img src="MONAI_LISA_5.png" width="800">
 </p>
 
 # MONAI_LISA: Learning Image Synthesis & Analysis

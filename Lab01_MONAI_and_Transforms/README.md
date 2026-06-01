@@ -1,4 +1,4 @@
-# Lab 01: Getting Started with MONAI
+# Lab 01: MONAI and Transform
 
 **Adapted by:** Yun-An Huang  
 **Date:** May 29, 2026
@@ -12,7 +12,7 @@ The goal of this lab is to familiarize you with:
 3.  **Dictionary Transforms**: Utilizing the dictionary-based API (`MapTransforms`) to handle multi-modal data or image-label pairs efficiently.
 
 ## 📂 Notebook Overview
-The primary script for this lab is `Lab01_Getting_Started_with_MONAI.ipynb`.
+The primary script for this lab is `Lab01_MONAI_and_Transforms.ipynb`.
 
 ### Key Workflow:
 - **Environment Setup**: Automated installation of the `monai` package and validation of the computing environment.

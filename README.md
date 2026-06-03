@@ -5,7 +5,7 @@
 
 # MONAI_LISA: Learning Image Synthesis & Analysis
 
-**MONAI_LISA** is a personal medical AI sandbox designed for exploring and experimenting with 3D medical image computing. Built on top of the [MONAI](https://monai.io/) framework, this project provides a playground for implementing and benchmarking state-of-the-art deep learning techniques in the medical domain.
+**MONAI_LISA** is a personal medical AI sandbox designed for exploring and experimenting with 3D medical image computing. Built on top of the [MONAI](https://project-monai.github.io/) framework, this project provides a playground for implementing and benchmarking state-of-the-art deep learning techniques in the medical domain.
 
 ## 🌟 Overview
 
@@ -23,7 +23,7 @@ Medical imaging requires specialized tools and architectures. MONAI-LISA aims to
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/MONAI_LISA.git
+git clone https://github.com/YunAnGitHub/MONAI_LISA.git
 cd MONAI_LISA
 pip install -r requirements.txt
 ```

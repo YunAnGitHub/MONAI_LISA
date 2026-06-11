@@ -10,12 +10,13 @@
 # 2. Profiling Notebook (Lab04_GPU_Accelerate_Training_colab.ipynb): A Jupyter Notebook designed to run on Google Colab or a local server for performance profiling. This part includes the complete environment setup, including NVIDIA Nsys configuration.
 # 3. Profiling Script (Lab04_GPU_Accelerate_Training_colab.py): A streamlined Python script dedicated strictly to profiling analysis. It omits the environment setup and utilizes a reduced number of training epochs for quick execution. This script is intended to be run after completing the setup in the profiling notebook.
 
+# please run the Profiling Notebook before this notebook.
 
 ## Initialization
-from google.colab import drive # Import Google Colab drive utility
+from google.colab import drive # Import Google Colab drive utility # type: ignore
 import os # Import os module for interacting with the operating system
 
-import monai
+import monai # type: ignore
 import torch
 import glob
 import math
@@ -27,22 +28,22 @@ import time
 import matplotlib.pyplot as plt
 
 from torch.optim import Adam, SGD
-from monai.apps import download_and_extract
-from monai.config import print_config
-from monai.data import (
+from monai.apps import download_and_extract # type: ignore
+from monai.config import print_config # type: ignore
+from monai.data import ( # type: ignore
     CacheDataset,
     DataLoader,
     ThreadDataLoader,
     Dataset,
     decollate_batch,
     set_track_meta,
-)
-from monai.inferers import sliding_window_inference
-from monai.losses import DiceLoss, DiceCELoss
-from monai.metrics import DiceMetric
-from monai.networks.layers import Act, Norm
-from monai.networks.nets import UNet
-from monai.transforms import (
+) 
+from monai.inferers import sliding_window_inference # type: ignore
+from monai.losses import DiceLoss, DiceCELoss # type: ignore
+from monai.metrics import DiceMetric # type: ignore
+from monai.networks.layers import Act, Norm # type: ignore
+from monai.networks.nets import UNet # type: ignore
+from monai.transforms import ( # type: ignore
     EnsureChannelFirstd,
     AsDiscrete,
     Compose,
@@ -55,11 +56,11 @@ from monai.transforms import (
     ScaleIntensityRanged,
     Spacingd,
 )
-from monai.utils import set_determinism
+from monai.utils import set_determinism # type: ignore
 
 # for profiling
-import nvtx
-from monai.utils.nvtx import Range
+import nvtx # type: ignore
+from monai.utils.nvtx import Range # type: ignore
 import contextlib  # to improve code readability (combining training/validation loop with and without profiling)
 
 print_config()
